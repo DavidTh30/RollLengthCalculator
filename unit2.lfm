@@ -103,6 +103,7 @@ object Form2: TForm2
     TextFont = 'default'
     TextQuality = fqSystemClearType
     Caption = 'OK'
+    OnClick = BCMaterialDesignButton1Click
   end
   object Label1: TLabel
     Left = 32
