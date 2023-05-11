@@ -17,6 +17,7 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    procedure BCMaterialDesignButton1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -36,6 +37,11 @@ implementation
 procedure TForm2.FormCreate(Sender: TObject);
 begin
 
+end;
+
+procedure TForm2.BCMaterialDesignButton1Click(Sender: TObject);
+begin
+  Form2.Close;
 end;
 
 end.
