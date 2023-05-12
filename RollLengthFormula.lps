@@ -9,9 +9,8 @@
         <Filename Value="RollLengthFormula.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="RollLengthCalculator"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos Y="26"/>
+        <CursorPos X="49" Y="15"/>
         <UsageCount Value="50"/>
         <Loaded Value="True"/>
       </Unit>
@@ -22,7 +21,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="69" Y="97"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="386"/>
+        <CursorPos X="23" Y="398"/>
         <UsageCount Value="50"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
