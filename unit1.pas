@@ -367,10 +367,10 @@ end;
 
 procedure TForm1.BCMaterialDesignButton6Click(Sender: TObject);
 var
-  InRi:float;
-  OuRi:float;
+  InRa:float;
+  OuRa:float;
   DifLenght:float;
-  Thi:float;
+  Thi:float; //thickness
   Rou:float;
 
 begin
@@ -381,21 +381,21 @@ begin
 
   //1 Micrometres = 0.001 Millimetre
   //1 Millimetre = 1000 Micrometres
-  //Round:=(InRi-OuRi)/Thi
+  //Round:=(InRa-OuRa)/t
 
-  InRi:=5/2;
-  OuRi:=100/2;
+  InRa:=5/2;
+  OuRa:=100/2;
   Thi:=100;
 
-  if (ComboBox1.ItemIndex=0) then InRi:=StrToFloat(InsideDiameter.Caption)/2*1000000;
-  if (ComboBox1.ItemIndex=1) then InRi:=StrToFloat(InsideDiameter.Caption)/2*10000;
-  if (ComboBox1.ItemIndex=2) then InRi:=StrToFloat(InsideDiameter.Caption)/2*1000;
+  if (ComboBox1.ItemIndex=0) then InRa:=StrToFloat(InsideDiameter.Caption)/2*1000000;
+  if (ComboBox1.ItemIndex=1) then InRa:=StrToFloat(InsideDiameter.Caption)/2*10000;
+  if (ComboBox1.ItemIndex=2) then InRa:=StrToFloat(InsideDiameter.Caption)/2*1000;
 
-  if (ComboBox2.ItemIndex=0) then OuRi:=StrToFloat(OutsideDiameter.Caption)/2*1000000;
-  if (ComboBox2.ItemIndex=1) then OuRi:=StrToFloat(OutsideDiameter.Caption)/2*10000;
-  if (ComboBox2.ItemIndex=2) then OuRi:=StrToFloat(OutsideDiameter.Caption)/2*1000;
+  if (ComboBox2.ItemIndex=0) then OuRa:=StrToFloat(OutsideDiameter.Caption)/2*1000000;
+  if (ComboBox2.ItemIndex=1) then OuRa:=StrToFloat(OutsideDiameter.Caption)/2*10000;
+  if (ComboBox2.ItemIndex=2) then OuRa:=StrToFloat(OutsideDiameter.Caption)/2*1000;
 
-  DifLenght:=OuRi-InRi;
+  DifLenght:=OuRa-InRa;
 
   if (ComboBox3.ItemIndex=0) then Thi:=StrToFloat(Thickness.Caption)*1000000;
   if (ComboBox3.ItemIndex=1) then Thi:=StrToFloat(Thickness.Caption)*10000;
