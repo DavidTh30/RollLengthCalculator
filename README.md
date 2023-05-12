@@ -29,7 +29,7 @@ $$L = \frac{(OD^2 /4)−(ID^2 /4)}{t}$$
 
 #### Find outer diameter from inner diameter, thickness and length
 
-  $$OD = \sqrt{(\frac{L*t*4}{Pi})+(ID^2)} $$
+  $$OD = \sqrt{(\frac{Lt4}{Pi})+(ID^2)} $$
   
   OD=sqrt((Lt4/Pi)+(ID^2)) 
   
@@ -37,7 +37,7 @@ $$L = \frac{(OD^2 /4)−(ID^2 /4)}{t}$$
 
 #### Find inner diameter from outer diameter, thickness and length
 
-  $$ID = \sqrt{(OD^2)-(\frac{L*t*4}{Pi})} $$
+  $$ID = \sqrt{(OD^2)-(\frac{Lt4}{Pi})} $$
   
   ID=sqrt((OD^2)-(Lt4/Pi)) 
   
@@ -45,7 +45,7 @@ $$L = \frac{(OD^2 /4)−(ID^2 /4)}{t}$$
 
 #### Find circumference from radius
 
-  $$C = 2*π*r$$
+  $$C = 2πr$$
   
   C=2πr
   
