@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 486
+  Left = 349
   Height = 395
-  Top = 171
+  Top = 119
   Width = 475
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'Roll Length Calculator V1.0.0'
+  Caption = 'Roll Length Calculator V1.0.1'
   ClientHeight = 395
   ClientWidth = 475
   Icon.Data = {
@@ -150,7 +150,7 @@ object Form1: TForm1
   OnPaint = FormPaint
   PopupMenu = PopupMenu1
   Position = poWorkAreaCenter
-  LCLVersion = '2.2.0.4'
+  LCLVersion = '2.2.2.0'
   Scaled = False
   object Shape8: TShape
     Left = 120
@@ -173,8 +173,9 @@ object Form1: TForm1
     Left = 32
     Height = 15
     Top = 270
-    Width = 54
+    Width = 55
     Caption = 'Thickness:'
+    ParentColor = False
   end
   object Label2: TLabel
     Left = 0
@@ -185,6 +186,7 @@ object Form1: TForm1
     Alignment = taCenter
     AutoSize = False
     Caption = 'Inside Diameter:'
+    ParentColor = False
     ParentShowHint = False
     ShowHint = True
   end
@@ -194,6 +196,7 @@ object Form1: TForm1
     Top = 299
     Width = 40
     Caption = 'Length:'
+    ParentColor = False
   end
   object Label4: TLabel
     Left = 0
@@ -204,6 +207,7 @@ object Form1: TForm1
     Alignment = taCenter
     AutoSize = False
     Caption = 'Outside Diameter:'
+    ParentColor = False
     ParentShowHint = False
     ShowHint = True
   end
@@ -436,6 +440,7 @@ object Form1: TForm1
     Font.Height = -11
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    ParentColor = False
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
@@ -452,6 +457,7 @@ object Form1: TForm1
     Font.Height = -11
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    ParentColor = False
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
@@ -506,8 +512,9 @@ object Form1: TForm1
     Left = 88
     Height = 15
     Top = 18
-    Width = 54
+    Width = 55
     Caption = 'Thickness:'
+    ParentColor = False
   end
   object Label8: TLabel
     Left = 150
@@ -515,6 +522,7 @@ object Form1: TForm1
     Top = 18
     Width = 59
     Caption = '100 micron'
+    ParentColor = False
   end
   object HMIPolyline1: THMIPolyline
     Left = 182
@@ -540,6 +548,7 @@ object Form1: TForm1
     Alignment = taRightJustify
     Caption = 'Length: 7834.34 m.'
     ParentBidiMode = False
+    ParentColor = False
   end
   object BCMaterialDesignButton5: TBCMaterialDesignButton
     Left = 303
@@ -590,6 +599,7 @@ object Form1: TForm1
     Top = 333
     Width = 125
     Caption = 'Outside Circumference:'
+    ParentColor = False
   end
   object English: TECBitBtn
     Tag = 1
@@ -599,6 +609,7 @@ object Form1: TForm1
     Top = 4
     Width = 29
     AutoSize = True
+    Checked = True
     ImageIndex = 0
     ImageIndexChecked = 0
     Images = ImageList1
@@ -608,6 +619,7 @@ object Form1: TForm1
     ShowHint = True
     TabOrder = 11
     OnChange = EnglishChange
+    OnClick = EnglishClick
   end
   object Thai: TECBitBtn
     Left = 445
@@ -625,6 +637,7 @@ object Form1: TForm1
     ShowHint = True
     TabOrder = 12
     OnChange = ThaiChange
+    OnClick = ThaiClick
   end
   object Round_: TEdit
     Left = 135
@@ -657,8 +670,9 @@ object Form1: TForm1
     Left = 32
     Height = 15
     Top = 364
-    Width = 26
+    Width = 28
     Caption = 'Trun:'
+    ParentColor = False
   end
   object Label12: TLabel
     Left = 240
@@ -666,15 +680,17 @@ object Form1: TForm1
     Top = 364
     Width = 32
     Caption = 'round'
+    ParentColor = False
   end
   object Label13: TLabel
     Left = 88
     Height = 15
     Top = 75
-    Width = 89
+    Width = 90
     Alignment = taRightJustify
     Caption = 'Turn: 4750 round'
     ParentBidiMode = False
+    ParentColor = False
   end
   object PopupMenu1: TPopupMenu
     Left = 24
