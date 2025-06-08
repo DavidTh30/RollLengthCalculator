@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 724
+  Left = 769
   Height = 208
-  Top = 554
+  Top = 50
   Width = 273
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -90,7 +90,7 @@ object Form2: TForm2
   }
   OnCreate = FormCreate
   Position = poWorkAreaCenter
-  LCLVersion = '2.2.0.4'
+  LCLVersion = '2.2.2.0'
   object BCMaterialDesignButton1: TBCMaterialDesignButton
     Left = 64
     Height = 25
@@ -116,14 +116,16 @@ object Form2: TForm2
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object Label2: TLabel
     Left = 32
     Height = 15
     Top = 40
-    Width = 65
-    Caption = 'Version 1.0.0'
+    Width = 66
+    Caption = 'Version 1.0.1'
+    ParentColor = False
   end
   object Label3: TLabel
     Left = 32
@@ -135,6 +137,7 @@ object Form2: TForm2
     Font.Height = -13
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    ParentColor = False
     ParentFont = False
   end
 end
