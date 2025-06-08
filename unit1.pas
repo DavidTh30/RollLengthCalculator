@@ -79,6 +79,7 @@ type
     procedure ComboBox4Change(Sender: TObject);
     procedure ComboBox5Change(Sender: TObject);
     procedure EnglishChange(Sender: TObject);
+    procedure EnglishClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormPaint(Sender: TObject);
@@ -103,6 +104,7 @@ type
     procedure Shape6MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure Shape6MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure ThaiChange(Sender: TObject);
+    procedure ThaiClick(Sender: TObject);
     procedure ThicknessEditingDone(Sender: TObject);
   private
     function InsideDiameterGreatThenOrEquOutsideDiameter(InsideDiameter_: string; UnitIndex1:integer; OutsideDiameter_: string; UnitIndex2:integer) : boolean;
@@ -589,6 +591,12 @@ end;
 
 procedure TForm1.EnglishChange(Sender: TObject);
 begin
+
+end;
+
+procedure TForm1.EnglishClick(Sender: TObject);
+begin
+  Thai.Checked:=false;
   ChangeLanguage('English');
 end;
 
@@ -649,7 +657,7 @@ begin
   if(UnitIndex2=1)then OutsideDiameter_Float:=OutsideDiameter_Float*10;
   if(UnitIndex2=2)then OutsideDiameter_Float:=OutsideDiameter_Float;
 
-  if(InsideDiameter_Float>=OutsideDiameter_Float)then InsideDiameterGreatThenOrEquOutsideDiameter:=true;
+  if(InsideDiameter_Float>OutsideDiameter_Float)then InsideDiameterGreatThenOrEquOutsideDiameter:=true;
 
 end;
 
@@ -835,7 +843,7 @@ begin
     ComboBox3.Items.Add('ม.');
     ComboBox3.Items.Add('ซ.ม.');
     ComboBox3.Items.Add('ม.ม.');
-    ComboBox3.Items.Add('ไมตรอน');
+    ComboBox3.Items.Add('ไมครอน');
     ComboBox3.ItemIndex:=ComboBox3.Tag;
     ComboBox4.Items.Clear;
     ComboBox4.Items.Add('ม.');
@@ -856,12 +864,16 @@ end;
 
 procedure TForm1.MenuItem3Click(Sender: TObject);
 begin
-  ChangeLanguage('English');
+ Thai.Checked:=false;
+ English.Checked:=true;
+ ChangeLanguage('English');
 end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
-  ChangeLanguage('Thai');
+ English.Checked:=false;
+ Thai.Checked:=true;
+ ChangeLanguage('Thai');
 end;
 
 procedure TForm1.OutsideDiameterEditingDone(Sender: TObject);
@@ -1085,8 +1097,13 @@ end;
 
 procedure TForm1.ThaiChange(Sender: TObject);
 begin
-  ChangeLanguage('Thai');
 
+end;
+
+procedure TForm1.ThaiClick(Sender: TObject);
+begin
+  English.Checked:=false;
+  ChangeLanguage('Thai');
 end;
 
 procedure TForm1.ThicknessEditingDone(Sender: TObject);
